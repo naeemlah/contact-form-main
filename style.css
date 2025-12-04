@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --green-200: hsl(148, 38%, 91%);
+  --green-600: hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 54%);
+  --white: hsl(0, 0%, 100%);
+  --grey-500: hsl(186, 15%, 59%);
+  --grey-900: hsl(187, 24%, 22%);
+}
+
+/* Base styles */
+body {
+  background-color: var(--green-200);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  color: var(--grey-900);
+}
+
+main.contact-form {
+  background-color: var(--white);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--grey-900);
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Name fields side-by-side */
+.name-fields {
+  display: flex;
+  gap: 1rem;
+}
+
+.name-fields .form-group {
+  flex: 1;
+}
+
+/* Full-width fields */
+.form-group,
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--grey-900);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--grey-500);
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: var(--white);
+  color: var(--grey-900);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.star {
+  color: var(--green-600);
+}
+
+/* Radio buttons */
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+fieldset legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--grey-900);
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--grey-900);
+}
+
+input[type="radio"] {
+  accent-color: var(--green-600);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  accent-color: var(--green-600);
+  margin-right: 0.5rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--grey-900);
+}
+
+/* Error messages */
+.error-message {
+  display: none;
+  color: var(--red);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: var(--green-600);
+  color: var(--white);
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: hsl(169, 82%, 22%);
+}
+
+/* Confirmation message */
+.confirmation-message {
+  display: none;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: var(--green-200);
+  padding: 1rem;
+  border: 1px solid var(--green-600);
+  border-radius: 6px;
+  color: var(--green-600);
+}
+
+/* Footer attribution */
+.attribution {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--grey-500);
+}
+
+.attribution a {
+  color: var(--green-600);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
